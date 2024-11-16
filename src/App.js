@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Anushka from "./pages/Anushka";
 import Jordan from "./pages/Jordan";
@@ -9,6 +10,7 @@ export default function App() {
   return (
     <div>
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
